@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为商城</title>
+    <style>
+        :root {
+            --primary-color: #c7000b;
+            --dark-color: #000;
+            --light-color: #fff;
+            --shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .header {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header a {
+            color: inherit;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .header a:hover {
+            color: var(--primary-color);
+        }
+        
+        .search-box input {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: none;
+        }
+        
+        .main-content {
+            display: flex;
+            padding: 2rem;
+            gap: 2rem;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+        
+        .sidebar a:hover {
+            color: var(--primary-color);
+        }
+        
+        .product-display {
+            flex: 1;
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .product-layout {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #a00009;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">华为商城</a>
+        </div>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">消费者业务</a>
+            <a href="#">企业商用</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索...">
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">消费者业务</a></li>
+                <li><a href="#">优购码</a></li>
+                <li><a href="#">企业商用</a></li>
+                <li><a href="#">更多精彩</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">联系客服</a></li>
+                <li><a href="#">网站导航</a></li>
+            </ul>
+        </aside>
+        
+        <div class="product-display">
+            <div class="product-layout">
+                <div class="product-description">
+                    <h2>HUAWEI Pura X 16</h1>
+                    <p>耳机箱 阔很有型</p>
+                    <p>1610阔型屏 | 鸿蒙操作系统5 | 红枫原色影像</p>
+                    <a href="#" class="button">立即购买</a>
+                </div>
+                <div class="product-image-container">
+                    <img src="pura-x-kv-mob.jpg" alt="HUAWEI Pura X 16" class="product-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
